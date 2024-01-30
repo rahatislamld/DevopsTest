@@ -8,7 +8,7 @@ export default function Allstud() {
     //get student Data
     const getstuddata = async () => {
 
-        const res = await fetch("http://localhost:5000/getstud", {
+        const res = await fetch("http://proxy:90/api/getstud", {
             method: "GET",
             headers: {
                 "Content-Type": "application/json"
@@ -32,7 +32,7 @@ export default function Allstud() {
     //Delete student data
     const deletestud = async (id) => {
 
-        const res2 = await fetch(`http://localhost:5000/deletestud/${id}`, {
+        const res2 = await fetch(`http://server:5000/deletestud/${id}`, {
             method: "DELETE",
             headers: {
                 "Content-Type": "application/json"

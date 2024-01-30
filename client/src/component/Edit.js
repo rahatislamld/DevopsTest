@@ -31,7 +31,7 @@ export default function Edit() {
     console.log(id);
 
     const getstuddata = async () => {
-        const res = await fetch(`http://localhost:5000/getstud/${id}`, {
+        const res = await fetch(`http://server:5000/getstud/${id}`, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json"
@@ -56,7 +56,7 @@ export default function Edit() {
         e.preventDefault();
 
         const {name, address, subject, contact} =inputdata;
-        const res2 = await fetch(`http://localhost:5000/updatestud/${id}`, {
+        const res2 = await fetch(`http://server:5000/updatestud/${id}`, {
             method: "PATCH",
             headers: {
                 "Content-Type": "application/json"
