@@ -31,7 +31,7 @@ export default function Edit() {
     console.log(id);
 
     const getstuddata = async () => {
-        const res = await fetch(`http://35.92.141.26:90/api/getstud/${id}`, {
+        const res = await fetch(`http://54.201.39.199:90/api/getstud/${id}`, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json"
@@ -56,7 +56,7 @@ export default function Edit() {
         e.preventDefault();
 
         const {name, address, subject, contact} =inputdata;
-        const res2 = await fetch(`http://35.92.141.26:90/api/updatestud/${id}`, {
+        const res2 = await fetch(`http://54.201.39.199:90/api/updatestud/${id}`, {
             method: "PATCH",
             headers: {
                 "Content-Type": "application/json"

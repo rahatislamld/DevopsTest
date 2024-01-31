@@ -8,7 +8,7 @@ export default function Allstud() {
     //get student Data
     const getstuddata = async () => {
 
-        const res = await fetch("http://35.92.141.26:90/api/getstud", {
+        const res = await fetch("http://54.201.39.199:90/api/getstud", {
             method: "GET",
             headers: {
                 "Content-Type": "application/json"
@@ -32,7 +32,7 @@ export default function Allstud() {
     //Delete student data
     const deletestud = async (id) => {
 
-        const res2 = await fetch(`http://35.92.141.26:90/api/deletestud/${id}`, {
+        const res2 = await fetch(`http://54.201.39.199:90/api/deletestud/${id}`, {
             method: "DELETE",
             headers: {
                 "Content-Type": "application/json"
