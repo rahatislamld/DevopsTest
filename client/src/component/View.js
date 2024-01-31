@@ -8,7 +8,7 @@ export default function View() {
     console.log(id);
 
     const getstuddata = async () => {
-        const res = await fetch(`http://localhost:90/api/getstud/${id}`, {
+        const res = await fetch(`http://54.201.39.199:90/api/getstud/${id}`, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json"
