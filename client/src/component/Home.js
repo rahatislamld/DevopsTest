@@ -3,7 +3,7 @@ import React from 'react'
 export default function Home() {
   return (
     <div className='container mt-5'>
-      <h1 className='mt-5 text-center'>WELCOME TO MERN STACK PROJECT</h1>
+      <h1 className='mt-5 text-center'>WELCOME TO MERN STACK PROJECT DevopsFinalTest</h1>
       <div className='row mt-5'>
         <div className='col-md-6'>
           <h5>Front-End Technology</h5>
