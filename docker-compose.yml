@@ -2,7 +2,8 @@ version: '3.8'
 
 services:
   client:
-    image: rahat17/merncrudclient:latest
+    build:
+      context: ./client  # Replace with the actual path to your client code
     ports:
       - "3000:3000"
     depends_on:
@@ -11,7 +12,8 @@ services:
       - my-network
 
   server:
-    image: rahat17/merncrudserver:latest
+    build:
+      context: ./server  # Replace with the actual path to your server code
     ports:
       - "5000:5000"
     networks:
