@@ -24,7 +24,7 @@ export default function Addstud() {
 
         const { name, address, subject, contact } = inputdata;
 
-        const res = await fetch("http://localhost:90/api/addstud", {
+        const res = await fetch("http://35.92.141.26:90/api/addstud", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
